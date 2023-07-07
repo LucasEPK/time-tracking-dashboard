@@ -14,7 +14,8 @@
 
   <main>
     <section>
-      <div class="card-1">
+      <div class="main-card">
+        <img src="images/image-jeremy.png" alt="profile picture of jeremy">
         <h1>
           Report for
         </h1>
@@ -23,11 +24,12 @@
           Jeremy Robson
         </h2>
       
-        <p>
-          Daily
-          Weekly
-          Monthly
-        </p>
+        <input type="radio" name="periodical" id="daily"  onclick="daily()">
+        <label for="daily">Daily</label>
+        <input type="radio" name="periodical" id="weekly" onclick="weekly()" checked>
+        <label for="weekly">Weekly</label>
+        <input type="radio" name="periodical" id="monthly" onclick="monthly()">
+        <label for="monthly">Monthly</label>
       </div>
 
       <div class="json_data">
