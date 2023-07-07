@@ -55,7 +55,7 @@ function weekly() {
         let placeholder = document.querySelector(".json_data");
     
         let out = "";
-        let i = 2;
+        let i = 1;
     
         for(let activity of activities){
             
@@ -86,7 +86,7 @@ function monthly() {
         let placeholder = document.querySelector(".json_data");
     
         let out = "";
-        let i = 2;
+        let i = 1;
     
         for(let activity of activities){
             
