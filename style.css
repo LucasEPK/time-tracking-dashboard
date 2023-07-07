@@ -1,0 +1,38 @@
+body{
+    background-color: hsl(226, 43%, 10%); /*very dark blue*/
+
+    font-family: 'Rubik', sans-serif;
+    color: hsl(236, 100%, 87%);
+}
+
+.cards_section{
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+
+    width: 500px;
+    justify-content: center;
+    align-content: center;
+}
+
+.main-card{
+    background-color: hsl(246, 80%, 60%);/*blue*/
+}
+
+.radio_buttons{
+    background-color: hsl(235, 46%, 20%);
+}
+
+.card{
+    background-color: hsl(235, 46%, 20%);
+}
+
+.report_cards{
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    gap: 1em 0;
+}

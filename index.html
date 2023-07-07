@@ -8,12 +8,20 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+  <!--Imports Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!--CSS reset stylesheet-->
   <link rel="stylesheet" href="reset.css">
+  <!--CSS stylesheet-->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <main>
-    <section>
+    <section class="cards_section">
       <div class="main-card">
         <img src="images/image-jeremy.png" alt="profile picture of jeremy">
         <h1>
@@ -23,16 +31,18 @@
         <h2>
           Jeremy Robson
         </h2>
-      
-        <input type="radio" name="periodical" id="daily"  onclick="daily()">
-        <label for="daily">Daily</label>
-        <input type="radio" name="periodical" id="weekly" onclick="weekly()" checked>
-        <label for="weekly">Weekly</label>
-        <input type="radio" name="periodical" id="monthly" onclick="monthly()">
-        <label for="monthly">Monthly</label>
+        
+        <div class="radio_buttons">
+          <input type="radio" name="periodical" id="daily"  onclick="daily()">
+          <label for="daily">Daily</label>
+          <input type="radio" name="periodical" id="weekly" onclick="weekly()" checked>
+          <label for="weekly">Weekly</label>
+          <input type="radio" name="periodical" id="monthly" onclick="monthly()">
+          <label for="monthly">Monthly</label>
+        </div>
       </div>
 
-      <div class="json_data">
+      <div class="json_data report_cards">
         <!--will populate this in the javascript-->
       </div>
     </section>

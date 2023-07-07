@@ -61,7 +61,7 @@ function weekly() {
             
     
             out += `
-                <div class="card-${i}">
+                <div class="card card-${i}">
                     <h3>${activity.title}</h3>
                     <p>${activity.timeframes.weekly.current}hrs</p>
                     <p>Last Week - ${activity.timeframes.weekly.previous}hrs</p>
@@ -92,7 +92,7 @@ function monthly() {
             
     
             out += `
-                <div class="card-${i}">
+                <div class="card card-${i}">
                     <h3>${activity.title}</h3>
                     <p>${activity.timeframes.monthly.current}hrs</p>
                     <p>Last Month - ${activity.timeframes.monthly.previous}hrs</p>
