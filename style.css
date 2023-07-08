@@ -81,7 +81,51 @@ body{
 
 .card{
     background-color:blueviolet;
-    height: 130px;
+    background-repeat: no-repeat;
+    background-position: right 10% top -15%;
+    height: 155px;
+
+    display: grid;
+    align-content: end;
+
+    border-radius: 15px;
+}
+
+.card-1{/*work*/
+    background-image: url(images/icon-work.svg);
+
+    background-color: hsl(15, 100%, 70%);/*light orange*/
+}
+
+.card-2{/*play*/
+    background-image: url(images/icon-play.svg);
+
+    background-color: hsl(195, 74%, 62%);/*soft blue*/
+}
+
+.card-3{/*study*/
+    background-image: url(images/icon-study.svg);
+
+    background-color: hsl(348, 100%, 68%);/*light red*/
+}
+
+.card-4{/*exercise*/
+    background-image: url(images/icon-exercise.svg);
+
+    background-color: hsl(145, 58%, 55%);/*lime green*/
+    background-position: right 10% top;
+}
+
+.card-5{/*social*/
+    background-image: url(images/icon-social.svg);
+
+    background-color: hsl(264, 64%, 52%);/*violet*/
+}
+
+.card-6{/*selfcare*/
+    background-image: url(images/icon-self-care.svg);
+
+    background-color: hsl(43, 84%, 65%);/*soft orange*/
 }
 
 .card_inside{
@@ -89,7 +133,16 @@ body{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     
+    padding: 30px 20px;
+
+
     background-color: hsl(235, 46%, 20%);/*dark blue*/
+    border-radius: 15px;
+}
+
+.card_inside img{
+    justify-self: end;
+    align-self: center;
 }
 
 .report_cards{
