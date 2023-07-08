@@ -34,8 +34,8 @@ function daily() {
                     <div class="card_inside">
                         <h3>${activity.title}</h3>
                         <img src="images/icon-ellipsis.svg" alt="3 dots">
-                        <p class="current-${i}">${activity.timeframes.daily.current}hrs</p>
-                        <p class="previous-${i}">Yesterday - ${activity.timeframes.daily.previous}hrs</p>
+                        <p class="current">${activity.timeframes.daily.current}hrs</p>
+                        <p class="previous">Yesterday - ${activity.timeframes.daily.previous}hrs</p>
                     </div>
                 </div>
             `;
@@ -68,8 +68,8 @@ function weekly() {
                     <div class="card_inside">
                         <h3>${activity.title}</h3>
                         <img src="images/icon-ellipsis.svg" alt="3 dots">
-                        <p class="current-${i}">${activity.timeframes.weekly.current}hrs</p>
-                        <p class="previous-${i}">Last Week - ${activity.timeframes.weekly.previous}hrs</p>
+                        <p class="current">${activity.timeframes.weekly.current}hrs</p>
+                        <p class="previous">Last Week - ${activity.timeframes.weekly.previous}hrs</p>
                     </div>
                 </div>
             `;
@@ -102,8 +102,8 @@ function monthly() {
                     <div class="card_inside">
                         <h3>${activity.title}</h3>
                         <img src="images/icon-ellipsis.svg" alt="3 dots">
-                        <p class="current-${i}">${activity.timeframes.monthly.current}hrs</p>
-                        <p class="previous-${i}">Last Month - ${activity.timeframes.monthly.previous}hrs</p>
+                        <p class="current">${activity.timeframes.monthly.current}hrs</p>
+                        <p class="previous">Last Month - ${activity.timeframes.monthly.previous}hrs</p>
                     </div>
                 </div>
             `;

@@ -72,8 +72,6 @@ body{
 }
 
 .radio_label{
-    cursor: pointer;
-
     color: hsl(235, 45%, 61%);/*desaturated blue*/
     font-weight: 300;
     font-size: 1.2rem;
@@ -131,16 +129,38 @@ body{
 .card_inside{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
     
-    padding: 30px 20px;
+    padding: 19px 20px;
 
 
     background-color: hsl(235, 46%, 20%);/*dark blue*/
     border-radius: 15px;
 }
 
+.card_inside h3{
+    font-weight: 400;
+    color: white;
+
+    font-size: 1.125rem;/*18px*/
+
+    align-self: end;
+}
+
 .card_inside img{
+    justify-self: end;
+    align-self: center;
+}
+
+.current{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.previous{
+    font-weight: 300;
+
     justify-self: end;
     align-self: center;
 }
