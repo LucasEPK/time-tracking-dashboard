@@ -31,9 +31,12 @@ function daily() {
     
             out += `
                 <div class="card card-${i}">
-                    <h3>${activity.title}</h3>
-                    <p>${activity.timeframes.daily.current}hrs</p>
-                    <p>Yesterday - ${activity.timeframes.daily.previous}hrs</p>
+                    <div class="card_inside">
+                        <h3>${activity.title}</h3>
+                        <img src="images/icon-ellipsis.svg" alt="3 dots">
+                        <p class="current-${i}">${activity.timeframes.daily.current}hrs</p>
+                        <p class="previous-${i}">Yesterday - ${activity.timeframes.daily.previous}hrs</p>
+                    </div>
                 </div>
             `;
     
@@ -62,9 +65,12 @@ function weekly() {
     
             out += `
                 <div class="card card-${i}">
-                    <h3>${activity.title}</h3>
-                    <p>${activity.timeframes.weekly.current}hrs</p>
-                    <p>Last Week - ${activity.timeframes.weekly.previous}hrs</p>
+                    <div class="card_inside">
+                        <h3>${activity.title}</h3>
+                        <img src="images/icon-ellipsis.svg" alt="3 dots">
+                        <p class="current-${i}">${activity.timeframes.weekly.current}hrs</p>
+                        <p class="previous-${i}">Last Week - ${activity.timeframes.weekly.previous}hrs</p>
+                    </div>
                 </div>
             `;
     
@@ -93,9 +99,12 @@ function monthly() {
     
             out += `
                 <div class="card card-${i}">
-                    <h3>${activity.title}</h3>
-                    <p>${activity.timeframes.monthly.current}hrs</p>
-                    <p>Last Month - ${activity.timeframes.monthly.previous}hrs</p>
+                    <div class="card_inside">
+                        <h3>${activity.title}</h3>
+                        <img src="images/icon-ellipsis.svg" alt="3 dots">
+                        <p class="current-${i}">${activity.timeframes.monthly.current}hrs</p>
+                        <p class="previous-${i}">Last Month - ${activity.timeframes.monthly.previous}hrs</p>
+                    </div>
                 </div>
             `;
     
