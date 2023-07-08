@@ -77,6 +77,15 @@ body{
     font-size: 1.2rem;
 }
 
+.report_cards{
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    gap: 1em 0;
+}
+
 .card{
     background-color:blueviolet;
     background-repeat: no-repeat;
@@ -165,11 +174,75 @@ body{
     align-self: center;
 }
 
-.report_cards{
-    display: grid;
+@media(min-width: 800px){
 
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    main{
+        height: 100vh;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
 
-    gap: 1em 0;
+    .cards_section{
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 560px;
+
+        margin: 0;
+        gap: 2rem;
+    }
+
+    .jeremy{
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-evenly;
+
+        height: 400px;
+        padding: 0 40px;
+    }
+
+    .jeremy img{
+        align-self: start;
+
+        height: 80px;
+
+        margin-top: 30px;
+    }
+
+    .jeremy h1{
+        align-self: stretch;
+
+        margin-top: 50px;
+    }
+
+    .jeremy h2{
+        font-size: 2.5rem;
+
+        max-width: 10ch;
+        margin-bottom: 110px;
+    }
+
+    .radio_buttons{
+        height: calc(100% - 400px); /*130px is the size of the div on top of this one*/
+        flex-direction: column;
+    
+        align-items: start;
+        padding: 0 40px;
+    }
+
+    .radio_label{
+        cursor: pointer;
+    }
+
+    .radio_label:hover{
+        color: white;
+    }
+
+    .report_cards{
+    
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    
+        gap: 2em;
+    }
 }
