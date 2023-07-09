@@ -256,6 +256,7 @@ body{
     }
 
     .card_inside{
+        padding: 30px 30px;
         height: 220px;
         grid-template-columns: 4fr 1fr;
         grid-template-rows: 2fr 3fr 1fr;
@@ -274,6 +275,12 @@ body{
     }
 
     .card_inside img{
+        /* width: 21;
+        height: 5; */
+        width: 41px;
+        height: 25px;
+
+        padding: 10px;
         cursor: pointer;
     }
 
