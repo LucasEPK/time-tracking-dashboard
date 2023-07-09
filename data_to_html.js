@@ -33,7 +33,7 @@ function daily() {
                 <div class="card card-${i}">
                     <div class="card_inside">
                         <h3>${activity.title}</h3>
-                        <img src="images/icon-ellipsis.svg" alt="3 dots">
+                        <img class="card_img" src="images/icon-ellipsis.svg" alt="3 dots">
                         <p class="current">${activity.timeframes.daily.current}hrs</p>
                         <p class="previous">Yesterday - ${activity.timeframes.daily.previous}hrs</p>
                     </div>
@@ -67,7 +67,7 @@ function weekly() {
                 <div class="card card-${i}">
                     <div class="card_inside">
                         <h3>${activity.title}</h3>
-                        <img src="images/icon-ellipsis.svg" alt="3 dots">
+                        <img class="card_img" src="images/icon-ellipsis.svg" alt="3 dots">
                         <p class="current">${activity.timeframes.weekly.current}hrs</p>
                         <p class="previous">Last Week - ${activity.timeframes.weekly.previous}hrs</p>
                     </div>
@@ -101,7 +101,7 @@ function monthly() {
                 <div class="card card-${i}">
                     <div class="card_inside">
                         <h3>${activity.title}</h3>
-                        <img src="images/icon-ellipsis.svg" alt="3 dots">
+                        <img class="card_img" src="images/icon-ellipsis.svg" alt="3 dots">
                         <p class="current">${activity.timeframes.monthly.current}hrs</p>
                         <p class="previous">Last Month - ${activity.timeframes.monthly.previous}hrs</p>
                     </div>

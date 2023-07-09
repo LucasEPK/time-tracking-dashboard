@@ -245,4 +245,48 @@ body{
     
         gap: 2em;
     }
+
+    .card{
+        height: auto;
+        background-position: right 10% top -5%;
+    }
+
+    .card-4{
+        background-position: right 10% top;
+    }
+
+    .card_inside{
+        height: 220px;
+        grid-template-columns: 4fr 1fr;
+        grid-template-rows: 2fr 3fr 1fr;
+
+        transition: 0.4s;
+    }
+
+    .card_inside:hover{
+        cursor: pointer;
+        background-color: hsl(241, 34%, 36%); /*custom dark blue*/
+    }
+
+    .card_inside h3{
+        align-self: center;
+        font-weight: 500;
+    }
+
+    .card_inside img{
+        cursor: pointer;
+    }
+
+    .card_img:hover{
+        filter: brightness(0) saturate(100%) invert(100%) sepia(64%) saturate(0%) hue-rotate(236deg) brightness(113%) contrast(101%); /*turns svg white*/
+    }
+
+    .current{
+        font-size: 3.5rem;
+    }
+
+    .previous{
+        justify-self: start;
+        grid-area: 3/1/4/2;
+    }
 }
