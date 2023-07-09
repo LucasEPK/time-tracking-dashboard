@@ -13,7 +13,7 @@ if (radio_monthly.checked) {
     monthly()
 }
 
-function daily() {
+function daily() { //fetches daily stats from json and outputs it in the html
     fetch("data.json")
     
     .then(function(response) {
@@ -47,7 +47,7 @@ function daily() {
     })
 }
 
-function weekly() {
+function weekly() { //fetches weekly stats from json and outputs it in the html
     fetch("data.json")
     
     .then(function(response) {
@@ -81,7 +81,7 @@ function weekly() {
     })
 }
 
-function monthly() {
+function monthly() { //fetches monthly stats from json and outputs it in the html
     fetch("data.json")
     
     .then(function(response) {

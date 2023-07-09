@@ -1,6 +1,7 @@
 body{
     background-color: hsl(226, 43%, 10%); /*very dark blue*/
 
+    /*here we set default font settings*/
     font-family: 'Rubik', sans-serif;
     color: hsl(236, 100%, 87%); /*pale blue*/
 }
@@ -59,7 +60,7 @@ body{
     height: calc(100% - 130px); /*130px is the size of the div on top of this one*/
     display: flex;
 
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -101,7 +102,7 @@ body{
 .card-1{/*work*/
     background-image: url(images/icon-work.svg);
 
-    background-color: hsl(15, 100%, 70%);/*light orange*/
+    background-color: hsl(15, 100%, 70%);/*light red (work)*/
 }
 
 .card-2{/*play*/
@@ -113,7 +114,7 @@ body{
 .card-3{/*study*/
     background-image: url(images/icon-study.svg);
 
-    background-color: hsl(348, 100%, 68%);/*light red*/
+    background-color: hsl(348, 100%, 68%);/*light red (study)*/
 }
 
 .card-4{/*exercise*/
@@ -178,6 +179,7 @@ body{
 
     main{
         height: 100vh;
+
         display: grid;
         justify-content: center;
         align-content: center;
@@ -187,8 +189,8 @@ body{
         grid-template-columns: 1fr 3fr;
         grid-template-rows: 560px;
 
-        margin: 0;
         gap: 2rem;
+        margin: 0;
     }
 
     .jeremy{
@@ -206,24 +208,24 @@ body{
 
         height: 80px;
 
-        margin-top: 30px;
+        margin-top: 30px; /*this is to make it like the design probably not the best way but i couldn't think of a better way to do it with flexbox*/
     }
 
     .jeremy h1{
         align-self: stretch;
 
-        margin-top: 50px;
+        margin-top: 50px; /*this is to make it like the design probably not the best way but i couldn't think of a better way to do it with flexbox*/
     }
 
     .jeremy h2{
         font-size: 2.5rem;
 
         max-width: 10ch;
-        margin-bottom: 110px;
+        margin-bottom: 110px; /*this is to make it like the design probably not the best way but i couldn't think of a better way to do it with flexbox*/
     }
 
     .radio_buttons{
-        height: calc(100% - 400px); /*130px is the size of the div on top of this one*/
+        height: calc(100% - 400px); /*400px is the size of the div on top of this one*/
         flex-direction: column;
     
         align-items: start;
@@ -275,12 +277,11 @@ body{
     }
 
     .card_inside img{
-        /* width: 21;
-        height: 5; */
+        /*this part of code is to make the hover area of the image larger*/
         width: 41px;
         height: 25px;
-
         padding: 10px;
+
         cursor: pointer;
     }
 
